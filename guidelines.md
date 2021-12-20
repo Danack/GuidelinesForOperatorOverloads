@@ -1,4 +1,4 @@
-# Guidelines for operator overloads
+# Guidelines to avoid regretful operator overloads implementations
 
 Operator overloads are a powerful feature, but a common pattern is people will try to use them in ways that seem clever at the time, but 
 make using or maintaining that code be more difficult than it would be otherwise.
