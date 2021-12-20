@@ -4,14 +4,13 @@ Operator overloads are a powerful feature, but a common pattern is people will t
 make using or maintaining that code be more difficult than it would be otherwise.
 
 
-## which operators should I override? 
+## Which operators should I override? 
 
 Bottom line: don’t confuse your users.
  
 Remember the purpose of operator overloading: to reduce the cost and defect rate in code that uses your class. If you create operators
 that confuse your users (because they’re cool, because they make the code faster, because you need to prove to yourself that you can do
 it; doesn’t really matter why), you’ve violated the whole reason for using operator overloading in the first place.
-
 
 
 ## Don't use operator overloads for things completely unrelated to the symbols
