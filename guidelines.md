@@ -20,13 +20,28 @@ e.g. C++ cin/cout uses the bitwise shift operators for stuff completely unrelate
 
 ## Don't use operator overloads for things that are only ever going to be one line.
 
+Imagine you have a 'shopping basket' to which users can add items, you could try to be too clever and do it like:
+
+```
 $basket += $item;
+```
+
+But that isn't any easier to read than:
+
+```
+$basket->addItem($item);
+```
+
+And in fact is less explicit.
 
 
 ## Don't try to be cute
 
-$cached_db = $db + $redis_cache;
+Anything even remotely similar to:
 
+```
+$cached_db = $db + $redis_cache;
+```
 
 ## Most of the guidelines found here:
 
